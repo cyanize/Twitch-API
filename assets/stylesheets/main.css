@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #E3F2FD;
+}
+
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0.025em;
+}
+
+p {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 16px;
+}
+
+a {
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.wrapper {
+    background: white;
+    width: 325px;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.nav {
+    background: #42A5F5;
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+
+.nav>ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.nav ul li {
+    width: 33.334%;
+    height: 60px;
+    float: left;
+    overflow: hidden;
+}
+
+.nav ul li>a {
+    display: block;
+    color: white;
+    line-height: 60px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    opacity: 0.7;
+    position: relative;
+}
+
+.nav ul li:first-child>a {
+    border-left: none;
+}
+
+.nav ul li>a:hover {
+    opacity: 1;
+    transition: all .15s ease;
+}
+
+.nav ul li>.active {
+    opacity: 1;
+}
+
+.activeBar {
+    background: white;
+    height: 3px;
+    width: 33.334%;
+    position: absolute;
+    bottom: 0;
+    transition: left 0.2s ease-in-out;
+}
+
+.moveLeft {
+    left: 0;
+}
+
+.moveCenter {
+    left: 109px;
+}
+
+.moveRight {
+    left: 217px;
+}
+
+.search {
+    position: relative;
+}
+
+.searchbar {
+    width: 305px;
+    height: 30px;
+    margin: 1em 0;
+    padding-left: 28px;
+    border: none;
+    font: 300 1rem 'Roboto';
+    letter-spacing: 0.025em;
+}
+
+.searchbar::-webkit-input-placeholder {
+    opacity: 0.54;
+}
+
+.searchbar:focus::-webkit-input-placeholder {
+    opacity: 0.87;
+}
+
+.searchbar::-moz-placeholder {
+    opacity: 0.54;
+}
+
+.searchbar:focus::-moz-placeholder {
+    opacity: 0.87;
+}
+
+.searchbar:focus {
+    outline: none;
+    opacity: 0.87;
+}
+
+.bar {
+    width: 305px;
+    height: 3px;
+    background: #FF80AB;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.searchbar:focus+.bar {
+    transform: scaleX(1);
+}
+
+.streamLink {
+    text-transform: none;
+    color: inherit;
+    opacity: 1;
+}
+
+.offline {
+    color: rgba(0, 0, 0, 0.38);
+    font-style: italic;
+}
+
+.streamers {
+    height: 92px;
+    border-right: #FFF;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+
+.streamers:after {
+    content: '';
+    width: 233px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 92px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.streamers:hover {
+    border-right: 5px solid #FF80AB;
+    transition: border-right .15s ease;
+}
+
+.profilePicture {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 16px;
+}
+
+.group {
+    margin: 16px 0 0 0;
+    height: 60px;
+    position: relative;
+    width: 200px;
+}
+
+.displayName {
+    text-align: left;
+    line-height: 60px;
+    font-size: 18px;
+    width: 211px;
+}
+
+.status {
+    text-align: left;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 255px;
+    opacity: 0.38;
+}
+
+.fa-search {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 23px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0.54;
+}
+
+.fa-circle-thin {
+    float: right;
+    line-height: 60px;
+    color: #64DD17;
+    opacity: 0.54;
+}
+
+.left {
+    float: left;
+}

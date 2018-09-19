@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Twitch stream status</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,100">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class='wrapper'>
+        <nav class='nav'>
+            <ul class='left'>
+                <li><a id='all' class='active' href="#">All</a></li>
+                <li><a id='online' href="#">Online</a></li>
+                <li><a id='offline' href="#">Offline</a></li>
+            </ul>
+            <div id='activeBar' class='activeBar moveLeft'></div>
+        </nav>
+
+        <form class='search'>
+            <i class="fa fa-search left"></i>
+            <input class='searchbar' id='search' type='text' />
+            <div class='bar'></div>
+        </form>
+
+        <div class='panel' id='panel'></div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
